@@ -99,7 +99,7 @@ LOG=$LOGSCRIPT
 # [ ] = teste de expressão, && = operador lógico AND, == comparação de string, exit 1 = A maioria 
 # dos erros comuns na execução
 clear
-if [ "$USUARIO" == "0" ] && [ "$UBUNTU" == "20.04" ]
+if [ "$USUARIO" == "0" ] && [ "$UBUNTU" == "22.04" ]
 	then
 		echo -e "O usuário é Root, continuando com o script..."
 		echo -e "Distribuição é >= 20.04.x, continuando com o script..."
@@ -173,7 +173,7 @@ echo -e "Início do script $0 em: $(date +%d/%m/%Y-"("%H:%M")")\n" &>> $LOG
 clear
 echo
 #
-echo -e "Instalação do ZoneMinder no GNU/Linux Ubuntu Server 20.04.x\n"
+echo -e "Instalação do ZoneMinder no GNU/Linux Ubuntu Server 22.04.x\n"
 echo -e "Após a instalação do ZoneMinder acessar a URL: https://$(hostname -d | cut -d ' ' -f1)/zm/\n"
 echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Internet..."
 sleep 5
